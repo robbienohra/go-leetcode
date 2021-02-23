@@ -2,14 +2,7 @@ package main
 
 import "math"
 
-// TreeNode struct
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
-func closestValue(root *TreeNode, target float64) int {
+func closestValueStack(root *TreeNode, target float64) int {
 
 	min := math.MinInt64
 
