@@ -2,7 +2,7 @@ package main
 
 import "math"
 
-func search2(nums []int, target int) int {
+func search(nums []int, target int) int {
 
 	n := len(nums)
 
@@ -14,7 +14,7 @@ func search2(nums []int, target int) int {
 	R := n - 1
 
 	for L != R {
-		m := mid2(L, R)
+		m := mid(L, R)
 
 		if nums[m] <= target {
 			L = m
@@ -32,6 +32,6 @@ func search2(nums []int, target int) int {
 
 }
 
-func mid2(L, R int) int {
+func mid(L, R int) int {
 	return L + int(math.Ceil(float64((R-L))/2))
 }

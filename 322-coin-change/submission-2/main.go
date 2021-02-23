@@ -1,6 +1,6 @@
 package main
 
-func coinChange2(coins []int, amount int) int {
+func coinChange(coins []int, amount int) int {
 
 	dp := make([]int, amount+1)
 

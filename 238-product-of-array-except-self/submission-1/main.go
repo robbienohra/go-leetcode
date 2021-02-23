@@ -1,6 +1,6 @@
 package main
 
-func productExceptSelf1(nums []int) []int {
+func productExceptSelf(nums []int) []int {
 
 	n := len(nums)
 	output := make([]int, n)

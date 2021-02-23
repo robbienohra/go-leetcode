@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-func coinChange1(coins []int, amount int) int {
+func coinChange(coins []int, amount int) int {
 
 	// no coins are required to make change for an amount less than 1
 

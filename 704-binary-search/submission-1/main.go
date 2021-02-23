@@ -1,6 +1,6 @@
 package main
 
-func search1(nums []int, target int) int {
+func search(nums []int, target int) int {
 
 	n := len(nums)
 
@@ -28,6 +28,6 @@ func search1(nums []int, target int) int {
 
 }
 
-func mid1(L, R int) int {
+func mid(L, R int) int {
 	return L + (R-L)/2
 }
