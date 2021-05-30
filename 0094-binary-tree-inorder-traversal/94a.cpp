@@ -1,5 +1,3 @@
-//  constructor provided by problem
-
 struct TreeNode {
   int val;
   TreeNode *left;
@@ -16,5 +14,25 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> inorderTraversal(TreeNode *root) {}
+  void helper(TreeNode *root, vector<int> &res) {
+    if (root != nullptr) {
+
+      if (root->left != nullptr) {
+        helper(root->left, res);
+      }
+
+      res.push_back(root->val);
+
+      if (root->right != nullptr) {
+        helper(root->right, res);
+      }
+    }
+  }
+  vector<int> inorderTraversal(TreeNode *root) {
+    vector<int> res;
+
+    helper(root, res);
+
+    return res;
+  }
 };
